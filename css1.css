@@ -1,0 +1,168 @@
+*{margin:0;padding:0;box-sizing:border-box;transition:0.6s;}
+
+
+.header{height:90vh;background:black;
+  background:url(wallpapers/19.jpg);
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  object-fit: cover;
+
+
+  animation :animate 9s infinite ease-in-out;
+  }
+
+  @keyframes animate{
+    0%{background:url(wallpapers/19.jpg);background-position:center;background-repeat: no-repeat;background-size:cover;object-fit: cover;}
+    20%{background:url(wallpapers/9.jpg);background-position:center;background-repeat:no-repeat;background-size:cover;object-fit:cover;}
+    35%{background:url(wallpapers/9.jpg);background-position:center;background-repeat: no-repeat;background-size:cover;object-fit: cover;}
+    50%{background:url(wallpapers/6.jpg);background-position:center;background-repeat: no-repeat;background-size:cover;object-fit: cover;}
+    70%{background:url(wallpapers/16.jpg);background-position:center;background-repeat: no-repeat;background-size:cover;object-fit: cover;}
+       }
+
+  .header .backgroundblack{width:100%;height:100%;background:rgba(0,0,0,0.3);display:flex;justify-content:center;align-items:center;}
+
+.header .heading{height:auto;line-height:70px;}
+.header .heading #uxui{color:white;font-size:4rem;font-weight:bold;font-family:sans-serif;}
+.header .heading #quote{color:white;font-size:1.7rem;}
+
+
+
+.header .textstyle {font-family:sans-serif;letter-spacing:2px;display:flex;align-items:center;height:20px;font-size:0.6rem;color:white;text-decoration:none;}
+.header .rectangle{width:20px;height:20px;background:white;border:1px solid white;border-radius:2px}
+
+
+
+
+
+.content{min-height:100vh;display:flex;}
+.content .border{margin:auto;margin:25px;border:1px solid rgba(0,0,0,0.3);height:auto;width:100vw;border-radius:10px;}
+.content .border #photos{width:100%;display:grid;justify-content:center;padding-top:15px;
+
+
+  
+  }
+.content .border #photos .imagecontainer{position:relative;}
+.content .border #photos .imagecontainer .innercontent{padding:25px;display:flex;align-items:center;transition:0.3s;width:100%;height:100%;bottom:0;background:black;opacity:0;justify-content:center;position:absolute}
+.content .border #photos .imagecontainer .innercontent .hoverborder{width:100%;height:100%;;border:2px solid white;display:flex;justify-content:center;align-items:center;border-radius:10px;}
+.content .border #photos .imagecontainer .innercontent p{color:white;font-family:sans-serif;font-size:1.5rem;font-weight:bold}
+.content .border #photos .imagecontainer:hover .innercontent{background:rgba(0,0,0,0.7);opacity:1;}
+
+.content .border img{width:100%;}
+.content .border #photos .imagecontainer:hover img{outline:1px solid grey;}
+
+
+
+.footer{height:150px;background:grey;display:flex;align-items:center;justify-content:center;}
+.footer ul{line-height:30px;}
+.footer li{font-size:1.3rem;color:white;}
+
+.footer .child{width:92vw;height:auto;display:flex;justify-content:space-between;}
+.footer .threecirclebox{width:20px;height:auto;flex-direction:column;display:flex;justify-content:space-between;}
+
+.footer .threecirclebox .threecircle{width:12px;height:12px;border-radius:50%;}
+.footer .threecirclebox .first{background:rgb(255, 255, 255);}
+.footer .threecirclebox .second{background:rgb(72, 72, 72);}
+.footer .threecirclebox .third{background:rgb(2, 2, 2);}
+
+
+
+@media only screen and (max-width:1023px){
+  .header{height:50vh;}
+
+  .header .heading{width:80vw;}
+
+ }
+
+@media only screen and (max-width:748px){
+  .header .heading #uxui{font-size:3rem;}
+  .header .heading #quote{font-size:1.5rem;}
+
+  
+  .footer {height:100px;}
+  .footer .threecirclebox{justify-content:space-evenly;}
+  .footer .child ul{margin-left:20px;}
+}
+
+@media only screen and (max-width:663px){
+  .header .heading #uxui{font-size:3rem;}
+  .header .heading #quote{font-size:1.2rem;}
+
+  .header .heading{width:67vw;line-height:60px;}
+
+  
+}
+
+@media only screen and (max-width:637px){
+  .header .heading #uxui{font-size:2.5rem;}
+  .header .heading #quote{font-size:1rem;}
+  .content .border #photos .imagecontainer .innercontent p{font-size:1.3rem;}
+  .header .heading{width:80vw;}}
+
+  @media only screen and (max-width:440px){
+  .header .heading #uxui{font-size:2.2rem;}
+  .header .heading #quote{font-size:1rem;}
+
+  .header .heading{width:90vw;
+    }}
+  @media only screen and (max-width:401px){
+    .header{justify-content: start;}
+  .header .heading #uxui{font-size:2rem;}
+  .header .heading #quote{font-size:1rem;}
+
+  .header .heading{width:85vw;margin-left:10px;margin-right:10px;}
+  .header .textstyle {letter-spacing:1px;font-size:0.4rem
+    ;}
+  .header .heading #quote{line-height: 30px;}}
+
+
+
+           /* image gallery*/
+           .pan{display:flex;flex-wrap:wrap;justify-content:center;height:auto;padding:0px 20px 15px 20px;}
+           .column{padding:10px; max-width:25%;height:auto}
+
+           @media (orientation:portrait){
+ 
+          .column{
+            max-width:50%;}
+
+
+
+               }
+
+
+               @media only screen and ( max-width:1339px){
+                .content .border #photos .imagecontainer .innercontent{padding:17px;}
+            .content .border #photos .imagecontainer .innercontent p{font-size:1.4rem;}
+
+               }
+                @media only screen and ( max-width:509px){
+                .content .border #photos .imagecontainer .innercontent{padding:15px;}
+            .content .border #photos .imagecontainer .innercontent p{font-size:1.3rem;}
+
+               }
+
+               @media only screen and (max-width:440px){
+
+                .content .border #photos .imagecontainer .innercontent{padding:12px;}
+            .content .border #photos .imagecontainer .innercontent p{font-size:1.1rem;}
+
+               }
+
+               
+               @media only screen and (max-width:300px){
+
+                .content .border #photos .imagecontainer .innercontent{padding:9px;}
+            .content .border #photos .imagecontainer .innercontent p{font-size:1rem;}
+
+               }
+
+
+          
+
+          @media only screen and (max-width:200px){
+          .column{max-width:100%;}
+
+
+
+

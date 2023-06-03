@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Radio Input Example</title>
+</head>
+<body>
+  <h1>Radio Input Example</h1>
+
+  <input type="radio" name="mode" value="white" id="maleRadio">
+  
+  <input type="radio" name="mode" value="dark" id="femaleRadio">
+  
+
+  <script>
+    function handleRadioChange(event) {
+      var selectedValue = event.target.value;
+      
+      if(selectedValue=="white"){
+        console.log("white")
+      }
+      else{
+        console.log("dark")
+      }
+
+    }
+
+    var radios = document.getElementsByName('mode');
+    for (var i = 0; i < radios.length; i++) {
+      radios[i].addEventListener('change', handleRadioChange);
+    }
+  </script>
+</body>
+</html>

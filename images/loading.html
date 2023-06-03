@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Index Page</title>
+  <style>
+    #loading {
+      display: none;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      font-size: 18px;
+      font-weight: bold;
+    }
+  </style>
+  <script>
+    function showLoading() {
+      document.getElementById('loading').style.display = 'block';
+    }
+
+    function hideLoading() {
+      document.getElementById('loading').style.display = 'none';
+    }
+  </script>
+</head>
+<body>
+  <h1>Welcome to the Index Page</h1>
+  <button onclick="loadIframe()">Load Iframe</button>
+  <div id="loading">Loading...</div>
+  <iframe id="myIframe" src="about:blank" style="display: none;"></iframe>
+
+  <script>
+    function loadIframe() {
+      showLoading();
+      var iframe = document.getElementById('myIframe');
+      iframe.onload = function() {
+        hideLoading();
+        iframe.style.display = 'block';
+      };
+      iframe.src = 'other.html';
+    }
+  </script>
+</body>
+</html>
