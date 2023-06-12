@@ -36,8 +36,8 @@
 
 
 .content{min-height:100vh;display:flex;}
-.content .border{margin:auto;margin:25px;border:1px solid rgba(0,0,0,0.3);height:auto;width:100vw;border-radius:10px;}
-.content .border #photos{width:100%;display:grid;justify-content:center;padding-top:15px;
+.content .border{margin:auto;margin:25px;border:1px solid rgba(0,0,0,0.3);height:auto;width:100vw;border-radius:10px;padding:25px;}
+.content .border #photos{width:100%;display:flex;justify-content:center;
 
 
   
@@ -118,9 +118,9 @@
 
 
            /* image gallery*/
-           .pan{display:flex;flex-wrap:wrap;justify-content:center;height:auto;}
-           .column{padding:10px; max-width:24%;height:auto;}
-           .column .imagecontainer{margin-bottom:-5px;overflow: hidden;box-shadow:1px 1px 3px 1px rgba(0,0,0,0.2);}
+           .pan{display:flex;flex-wrap:wrap;justify-content:center;height:auto;width:100%;gap:20px;}
+           .column{ max-width:24%;height:auto;}
+           .column .imagecontainer{overflow: hidden;box-shadow:1px 1px 3px 1px rgba(0,0,0,0.2);}
            
            .column .imagecontainer:hover img{scale:120%;}
 
@@ -129,11 +129,14 @@
  
           .column{
 
-            max-width:49%;}
+            max-width:48%;}
 
 
 
                }
+
+          @media only screen and (max-width:200px){
+          .column{max-width:100%;}
 
 
                @media only screen and ( max-width:1339px){
@@ -163,10 +166,12 @@
                }
 
 
+
+              /* abhay kumar*/
+
+
           
 
-          @media only screen and (max-width:200px){
-          .column{max-width:100%;}
 
 
 
