@@ -118,13 +118,18 @@
 
 
            /* image gallery*/
-           .pan{display:flex;flex-wrap:wrap;justify-content:center;height:auto;padding:0px 20px 15px 20px;}
-           .column{padding:10px; max-width:25%;height:auto}
+           .pan{display:flex;flex-wrap:wrap;justify-content:center;height:auto;}
+           .column{padding:10px; max-width:24%;height:auto;}
+           .column .imagecontainer{margin-bottom:-5px;overflow: hidden;box-shadow:1px 1px 3px 1px rgba(0,0,0,0.2);}
+           
+           .column .imagecontainer:hover img{scale:120%;}
 
            @media (orientation:portrait){
+            
  
           .column{
-            max-width:50%;}
+
+            max-width:49%;}
 
 
 
