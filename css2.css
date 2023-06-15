@@ -140,7 +140,7 @@ iframe{width:83vw;height:84vh;border:none;outline:none;margin:auto;}
 
       .leftBox .slidertop p{font-size:2rem;font-weight:bold;margin-top:18px;color:white;}
       .leftBox .childparent{flex-grow:2;}
-      .leftBox .sliderbottomcolor{display:block;background:pink;height:70px;margin-bottom:30px;display:flex;justify-content:center;align-items:center;}
+      .leftBox .sliderbottomcolor{display:block;height:70px;margin-bottom:30px;display:flex;justify-content:center;align-items:center;}
       .leftBox .sliderbottomcolor .box{width:37px;display:flex;justify-content:space-between;flex-direction:row;} 
        .content .rightBox{width:100vw;}
        .content .rightBox #framemain{width:100vw;}
