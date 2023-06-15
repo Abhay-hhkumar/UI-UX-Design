@@ -1,17 +1,24 @@
-function showLoading() {
-      document.getElementById('loading').style.display = 'block';
-    }
 
-    function hideLoading() {
-      document.getElementById('loading').style.display = 'none';
-    }
- 
+    let load=document.getElementById('loading');
+
+	        	window.addEventListener("load",function(){
+
+	        		load.style.display="none";
+	        	});
+
+
+
+
     function loadIframe() {
-      showLoading();
-      var iframe = document.getElementById('framemain');
+     
+    let iframe = document.getElementById('framemain');
+    let loadbox=document.getElementById('loading');
 
-      var body = document.getElementById('body');
-      iframe.onload = function() {
-        hideLoading();       
-      };
-    }
+    // loading animation is already display:none (when we had loaded our page at first)
+    loadbox.style.display="block";
+    iframe.addEventListener('load',function(){
+      loadbox.style.display="none";
+    });
+
+  }
+
