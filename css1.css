@@ -1,5 +1,56 @@
 *{margin:0;padding:0;box-sizing:border-box;transition:0.6s;}
 
+.loadpage{width:100vw;height:100vh;background:grey;position:fixed;z-index:1000;display: none;}
+
+
+/*<!--loading -->*/  /*here important to give position:fixed and z-index:1000;  and put loading css at top*/
+#loading {z-index: 1000;
+    background:rgba(0,0,0,0.7);
+     
+      position:fixed;border-radius:7px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      max-width:700px;max-height:700px;
+
+    }
+
+    #loading .loader{
+    width:70px;
+    height:75px;
+    display:flex;
+    flex:wrap;
+    align-items:flex-end;
+
+    justify-content:space-evenly;
+}
+    
+    .ball{
+      width:17px;
+      height:17px;
+      border-radius: 50%;
+      background-color: white;
+      animation:bounce .5s alternate infinite;
+    }
+
+    .ball:nth-child(2){animation-delay: .16s;
+    }
+    .ball:nth-child(3){
+      animation-delay:.32s;
+    }
+
+
+  @keyframes bounce {
+    from{
+      transform:scaleX(1.25);
+    }
+  to{
+    transform: 
+    translateY(-50px) scaleX(1);
+  }}
+
+
+
 
 .header{height:90vh;background:black;
   background:url(wallpapers/19.jpg);
@@ -42,15 +93,13 @@
 
   
   }
-.content .border #photos .imagecontainer{position:relative;}
+.content .border #photos .imagecontainer{position:relative;height:auto;}
 .content .border #photos .imagecontainer .innercontent{padding:25px;display:flex;align-items:center;transition:0.3s;width:100%;height:100%;bottom:0;background:black;opacity:0;justify-content:center;position:absolute}
-.content .border #photos .imagecontainer .innercontent .hoverborder{width:100%;height:100%;;border:2px solid white;display:flex;justify-content:center;align-items:center;border-radius:10px;}
+.content .border #photos .imagecontainer .innercontent .hoverborder{background:grey;width:100%;height:100%;;border:2px solid white;display:flex;justify-content:center;align-items:center;border-radius:10px;}
 .content .border #photos .imagecontainer .innercontent p{color:white;font-family:sans-serif;font-size:1.5rem;font-weight:bold}
 .content .border #photos .imagecontainer:hover .innercontent{background:rgba(0,0,0,0.7);opacity:1;}
 
 .content .border img{width:100%;}
-.content .border #photos .imagecontainer:hover img{outline:1px solid grey;}
-
 
 
 .footer{height:150px;background:grey;display:flex;align-items:center;justify-content:center;}
@@ -119,55 +168,45 @@
 
            /* image gallery*/
            .pan{display:flex;flex-wrap:wrap;justify-content:center;height:auto;width:100%;gap:20px;}
-           .column{ max-width:24%;height:auto;}
-           .column .imagecontainer{overflow: hidden;box-shadow:1px 1px 3px 1px rgba(0,0,0,0.2);}
-           
+           .column{ max-width:23%;height:auto;}
+           .column .imagecontainer{overflow: hidden;box-shadow:1px 1px 3px 1px rgba(0,0,0,0.2);height:auto;background:pink;}
+    
            .column .imagecontainer:hover img{scale:120%;}
 
            @media (orientation:portrait){
             
  
-          .column{
+          .column{max-width:45%;}}
 
-            max-width:48%;}
-
-
-
-               }
-
-          @media only screen and (max-width:200px){
+          @media only screen and (max-width:300px){
           .column{max-width:100%;}
 
 
-               @media only screen and ( max-width:1339px){
+          @media only screen and ( max-width:1339px){
                 .content .border #photos .imagecontainer .innercontent{padding:17px;}
-            .content .border #photos .imagecontainer .innercontent p{font-size:1.4rem;}
-
+                .content .border #photos .imagecontainer .innercontent p{font-size:1.4rem;}
                }
-                @media only screen and ( max-width:509px){
+
+           @media only screen and ( max-width:509px){
                 .content .border #photos .imagecontainer .innercontent{padding:15px;}
-            .content .border #photos .imagecontainer .innercontent p{font-size:1.3rem;}
+                .content .border #photos .imagecontainer .innercontent p{font-size:1.3rem;}}
 
-               }
-
-               @media only screen and (max-width:440px){
+           @media only screen and (max-width:440px){
 
                 .content .border #photos .imagecontainer .innercontent{padding:12px;}
-            .content .border #photos .imagecontainer .innercontent p{font-size:1.1rem;}
-
-               }
-
+                .content .border #photos .imagecontainer .innercontent p{font-size:1.1rem;}}
                
-               @media only screen and (max-width:300px){
+            @media only screen and (max-width:300px){
 
                 .content .border #photos .imagecontainer .innercontent{padding:9px;}
-            .content .border #photos .imagecontainer .innercontent p{font-size:1rem;}
-
+                .content .border #photos .imagecontainer .innercontent p{font-size:1rem;}
                }
-
 
 
               /* abhay kumar*/
+
+
+
 
 
           
