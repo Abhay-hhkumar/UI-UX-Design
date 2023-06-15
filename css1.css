@@ -58,8 +58,6 @@
   background-repeat: no-repeat;
   background-size:cover;
   object-fit: cover;
-
-
   animation :animate 9s infinite ease-in-out;
   }
 
@@ -169,7 +167,7 @@
            /* image gallery*/
            .pan{display:flex;flex-wrap:wrap;justify-content:center;height:auto;width:100%;gap:20px;}
            .column{ max-width:23%;height:auto;}
-           .column .imagecontainer{overflow: hidden;box-shadow:1px 1px 3px 1px rgba(0,0,0,0.2);height:auto;background:pink;}
+           .column .imagecontainer{overflow: hidden;box-shadow:1px 1px 3px 1px rgba(0,0,0,0.2);height:auto;}
     
            .column .imagecontainer:hover img{scale:120%;}
 
@@ -201,17 +199,4 @@
                 .content .border #photos .imagecontainer .innercontent{padding:9px;}
                 .content .border #photos .imagecontainer .innercontent p{font-size:1rem;}
                }
-
-
               /* abhay kumar*/
-
-
-
-
-
-          
-
-
-
-
-
