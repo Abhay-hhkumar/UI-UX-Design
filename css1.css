@@ -58,6 +58,8 @@
   background-repeat: no-repeat;
   background-size:cover;
   object-fit: cover;
+
+
   animation :animate 9s infinite ease-in-out;
   }
 
@@ -194,9 +196,9 @@
                 .content .border #photos .imagecontainer .innercontent{padding:12px;}
                 .content .border #photos .imagecontainer .innercontent p{font-size:1.1rem;}}
                
-            @media only screen and (max-width:300px){
+            @media only screen and (max-width:200px){
 
                 .content .border #photos .imagecontainer .innercontent{padding:9px;}
-                .content .border #photos .imagecontainer .innercontent p{font-size:1rem;}
-               }
+                .content .border #photos .imagecontainer .innercontent p{font-size:1rem;}}
+               
               /* abhay kumar*/
