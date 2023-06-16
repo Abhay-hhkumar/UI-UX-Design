@@ -201,6 +201,4 @@ li{width:100%;background:pink;display:flex;justify-content:center;}
             .leftBox .slidertop .cross{margin-top:-37px;width:18px;height:18px;}
             .leftBox .slidertop .cross::after{width:13px;height:1px;}
             .leftBox .slidertop .cross::before{width:13px;height:1px;}
-            .leftBox .slidertop p{font-size:1.3rem;margin-top:18px;}
-
-    }
+            .leftBox .slidertop p{font-size:1.3rem;margin-top:18px;}}
